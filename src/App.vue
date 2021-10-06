@@ -10,7 +10,9 @@
         </button>
 
         <div>
-          <button v-for="tab in tabs" @click="id = tab.id" :class="`focus:outline-none hover:text-blue flex items-center py-2 px-4 hover:bg-lightblue rounded-full mr-auto mb-3 ${ id === tab.id ? 'text-blue' : ''}`">
+          <!-- <button v-for="tab in tabs" @click="id = tab.id" :class="`focus:outline-none hover:text-blue flex items-center py-2 px-4 hover:bg-lightblue rounded-full mr-auto mb-3 ${ id === tab.id ? 'text-blue' : ''}`"> -->
+          <button v-for="(tab, index) in tabs" :key="index" @click="id = tab.id" :class="`focus:outline-none hover:text-blue flex items-center py-2 px-4 hover:bg-lightblue rounded-full mr-auto mb-3 ${ id === tab.id ? 'text-blue' : ''}`">
+            <!-- <div v-for="(product, index) in products" :key="index"> -->
             <i :class="`${ tab.icon } text-2xl mr-4 text-left`"></i>
             <p class="text-lg font-semibold text-left hidden lg:block"> {{ tab.title }} </p>
           </button>
