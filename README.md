@@ -1,4 +1,4 @@
-# nodeal
+# Amerix UI
 
 ## Project setup
 ```
