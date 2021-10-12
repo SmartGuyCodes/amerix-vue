@@ -17,6 +17,7 @@
             <p class="text-lg font-semibold text-left hidden lg:block"> {{ tab.title }} </p>
           </button>
         </div>
+        
         <button class="text-white bg-blue rounded-full font-semibold focus:outline-none w-12 h-12 lg:h-auto lg:w-full p-3 hover:bg-darkblue">
           <p class="hidden lg:block">Flex</p>
           <i class="fas fa-plus lg:hidden"></i>
